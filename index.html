@@ -3,38 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<title>Landing Page</title>
-	<link rel="stylesheet" type="text/css" href="style.ccs">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="ccs/style.css">
+	<link rel="stylesheet" href="ccs/bootstrap.css">
 
 </head>
 <body>
 
-	<header>
-		<img class="logo" src="images/latam_logo.png" alt="Desafío Latam">
+	<header class="jumbotron text-white pt-2">
+		<img class="img-responsive float-left" width="200" src="images/latam_logo.png" alt="Desafío Latam">
 
+		
 		<nav class="navigation">
-			<ul>
-				<li>Equipo</li>
-				<li>Blog</li>
-				<li>Contacto</li>
+			<ul  class="nav justify-content-end">
+				<li class="nav-item pr-2">Equipo</li>
+				<li class="nav-item pr-2">Blog</li>
+				<li class="nav-item ">Contacto</li>
 			</ul>
 		</nav>
 
-		<h1>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
-		
-		<div class="comienza">
-			<h4>Comienza acá!</h4>
-		</div>
-		
-		<div class="informacion">
-			<h4>Más Info</h4>
-		</div>
+		<h1 class="container col-md-8 offset-md-2 text-center pt-5">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
+	<div class="text-center col-md-8 offset-md-2">	
+		<button type="button" class="btn btn-primary">Comienza acá!</button>
+			
+		<button type="button" class="btn btn-success">Más Info</button>
 
-		<p>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</p>
-
+		<p class="pl-5">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno!</p>
+	</div>
 	</header>
 
-	<section>
+	<div class="container text-center col-md-8 offset-md-2 position-relative pt-5">
 		<h2>EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h2>
 		
 		<p>
@@ -43,11 +40,11 @@
 		quis nostrud exercitation ullamco laboris nisi.
 		</p>
 
-		<img src="images/crowd.png">
+		<img src="images/crowd.png" class="mx-auto d-block">
 	
-	</section>
-	<hr/>
-	<section class="sections">
+	</div>
+	<hr class="mt-0"></hr>
+	<div class="container text-center col-md-8 offset-md-2 pb-5 pt-5">
 		<h2>SOLICITA INFORMACIÓN E INSCRÍBETE</h2>
 
 		<p>
@@ -57,14 +54,13 @@
 		consequat.
 		</p>
 
-		<div class="inscribete">
-			<p>Inscríbete!</p>
-		</div>
+	<button type="button" class="btn btn-primary">Inscríbete!</button>
 		<p>Vive la experiencia Desafío Latam!</p>
-	</section>
-	<hr/>
-	<section class="sections">
-		<article class="contacto">
+	</div>
+	<hr class="mt-0"></hr>	
+
+	<div class="container row col-md-10 offset-md-2 pb-5 pt-5">
+		<article class="float-left">
 			<h3>Contacto</h3>
 			<strong>Desafío Latam</strong>
 			<p>Ezequías Allende 2361</p>
@@ -73,17 +69,16 @@
 			<a href="inscripciones@desafiolatam.com">inscripciones@desafiolatam.com</a>
 		</article>
 		
-		<article class="suscribe">
+		<article class="float-left offset-md-2">
 			<h3>Suscribete</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			<input type="text" name="Ingresa" value="Ingresa Tu E-mail">
 			<input type="button" name="enviar" value="enviar">
 		</article>
-	</section>
-
-
-	<footer>
-		<h4>DESAFIOLATAM 2016 - CURSO FULLSTACK G5</h4>
-	</footer>
+	</div>
+ 
+	<div class="row clearfix jumbotron bg-dark text-white pb-2 pt-2">
+		<h6 class="offset-md-1">DESAFIOLATAM 2016 - CURSO FULLSTACK G5</h6>
+	</div>
 </body>
 </html>
